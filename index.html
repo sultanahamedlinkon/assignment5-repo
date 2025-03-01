@@ -14,9 +14,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <section class="max-w-[1200px] mx-auto">
+    <section class="max-w-[1200px] mx-auto pt-6 pb-10">
       <!-- navbar section -->
-      <section>
+      <section class="mt-4">
         <nav class="mt-4">
           <div class="navbar bg-slate-100 border rounded">
             <div class="flex-1 gap-2">
@@ -31,8 +31,10 @@
             <div class="flex-none gap-1">
               <img src="./A5-Dev-Board/assets/checkbox.png" alt="" />
               <p class="font-bold text-3xl">23</p>
-              <div class="text-xl ml-6">
-                <img src="./A5-Dev-Board/assets/theme-btn.png" alt="" />
+              <div>
+                <button id="color-btn" class="text-xl ml-6">
+                  <img id="color-btn" src="./A5-Dev-Board/assets/theme-btn.png" alt="" />
+                </button>
               </div>
             </div>
           </div>
@@ -40,11 +42,11 @@
       </section>
 
       <!-- card section -->
-      <section class="flex gap-2 bg-[#F4F7FF]">
+      <section class="flex gap-4  mt-5">
         <!-- left side card -->
 
-        <section class="w-[75%] mt-6">
-          <section class="mt-6 flex gap-3 justify-between">
+        <section class="w-[75%] mt-6 bg-[#F4F7FF] border rounded-lg">
+          <section class="mt-6 flex gap-3 justify-between p-3">
             <!-- Task Assigned -->
             <div class="flex gap-2 items-center bg-slate-100 p-6 border rounded-lg">
               <img
@@ -61,7 +63,7 @@
             <!-- button -->
 
             <div
-              class="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center px-4  w-[50%]"
+              class="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center px-4 cursor-pointer  w-[50%]"
             >
               <img
                 class="text-xl"
@@ -80,13 +82,13 @@
                 src="./A5-Dev-Board/assets/calender.png"
                 alt=""
               />
-              <p>Wed ,Jul 28 2025</p>
+              <p>Wed,Jul 28 2025</p>
               <p class=""></p>
             </div>
           </section>
 
           <!-- Completed card section-->
-          <section class="grid grid-cols-3 gap-2 mt-6">
+          <section class="grid grid-cols-3 gap-2 mt-6 p-3">
             <!-- card one -->
             <div class="card bg-base-100 shadow-xl">
               <div class="card-body">
@@ -205,20 +207,22 @@
             </div>
           </section>
         </section>
-
-        <!-- Activity Log section -->
-        <section class="mx-auto text-center mt-10 bg-white w-[25%] gap-2">
-          <div class="flex justify-center  items-center gap-2">
-            <img
-              class="text-3xl py-2"
-              src="./A5-Dev-Board/assets/activity.png"
-              alt=""
-            />
-            <p>Activity Log</p>
-          </div>
-          <button class="btn btn-active btn-primary">Clear History</button>
-        </section>
+  <!-- Activity Log section -->
+  <section class="mx-auto text-center mt-6 bg-white w-[25%] gap-2 pl-6 border rounded-lg">
+    <div class="flex justify-center  items-center gap-2">
+      <img
+        class="text-3xl py-2"
+        src="./A5-Dev-Board/assets/activity.png"
+        alt=""
+      />
+      <p>Activity Log</p>
+    </div>
+    <button class="btn btn-active btn-primary">Clear History</button>
+  </section>
+      
       </section>
+
+        
     </section>
     <script src="./scripet/scripet.js"></script>
     <script src="./scripet/Discover.js"></script>
